@@ -1,2 +1,2 @@
 #!/bin/bash
-echo play star wars
+telnet towel.blinkenlights.nl
