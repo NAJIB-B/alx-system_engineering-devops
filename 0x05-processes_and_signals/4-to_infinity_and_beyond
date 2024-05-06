@@ -4,6 +4,6 @@
 
 count=1
 
-while [ "$count" -eq 1 ]; then
+while [ "$count" -eq 1 ]; do
 	echo To infinity and beyond
 done
