@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script kill a process matching a pattern
+
+pkill -9 -f "bash ./7-highlander"
