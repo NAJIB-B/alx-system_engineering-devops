@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script use the while and the case statement
+# to display numbers from 1 to 10 and then, it displays
+# some certain words after certain numbers
+
+count=1
+
+while [[ "$count" -lt 20 ]]; do
+	echo "$count"
+	case "$count" in
+		4)	echo bad luck from China ;;
+		9)	echo bad luck from Japan ;;
+		17)	echo bad luck from Italy ;;
+	esac
+	count=$((count + 1))
+done
