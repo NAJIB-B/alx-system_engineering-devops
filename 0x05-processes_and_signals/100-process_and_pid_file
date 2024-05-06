@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# This script print To infinity and beyond indefinately
+
+trap 'echo "Y U no love me?!"' SIGINT
+
+echo "$$" > /var/run/myscript.pid
+
+cleanupForSigterm() {
+	echo I hate the kill command
+	rm /var/run/myscript.pid
+	exit
+}
+
+trap cleanupForSigterm  SIGTERM
+
+cleanupForSigquit() {
+	rm /var/run/myscript.pid
+	exit
+}
+
+
+trap cleanupForSigquit  SIGQUIT
+
+count=1
+
+while [ "$count" -eq 1 ]; do
+	echo To infinity and beyond
+	sleep 2
+done
