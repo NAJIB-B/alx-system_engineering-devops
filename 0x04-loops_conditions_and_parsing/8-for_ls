@@ -3,6 +3,6 @@
 # a list format, without the precceding number and dash
 
 list=$(ls .)
-for i in "$list"; do
-	echo "$i" | sed 's/.*-//'
+for i in $list; do
+	echo "${i#*-}"
 done
