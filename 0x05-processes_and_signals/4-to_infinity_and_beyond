@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script creates an infinite loop that prints
+# To infinity and beyond
+
+count=1
+
+while [ "$count" -eq 1 ]; then
+	echo To infinity and beyond
+done
