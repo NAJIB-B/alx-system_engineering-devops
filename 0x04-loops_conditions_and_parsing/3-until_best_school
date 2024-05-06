@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script prints the word "Best School"
+# 10 times using the until key word
+
+count=0
+
+until [[ "$count" -gt 9 ]]; do
+	echo Best School
+	count=$((count + 1))
+done
